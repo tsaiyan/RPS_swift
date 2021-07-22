@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RPS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Rock, paper, Scissors?" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="L0U-un-aFE" userLabel="Rock, paper, Scissors?">
+                                <rect key="frame" x="72" y="336" width="270" height="57"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tow-KI-aOD">
+                                <rect key="frame" x="164.5" y="732" width="85" height="30"/>
+                                <state key="normal" title="PLAY AGAIN"/>
+                                <connections>
+                                    <action selector="resetButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jJU-KP-WWN"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="QE7-zG-6gu" userLabel="logo">
+                                <rect key="frame" x="84" y="458" width="246" height="72"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AGU-YH-lIf" userLabel="Rock Button">
+                                        <rect key="frame" x="0.0" y="0.0" width="54" height="72"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        <state key="normal" title="👊"/>
+                                        <connections>
+                                            <action selector="rockButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ygM-bV-1sc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jUl-qD-sn7">
+                                        <rect key="frame" x="88" y="0.0" width="54" height="72"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        <state key="normal" title="👋"/>
+                                        <connections>
+                                            <action selector="paperButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lys-Bk-rAB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tQX-gj-0Ay" userLabel="Scissors Button">
+                                        <rect key="frame" x="176" y="0.0" width="70" height="72"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="P6Y-9j-gaF"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        <state key="normal" title=" ✌️"/>
+                                        <connections>
+                                            <action selector="scissorsButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eyA-kR-dls"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zca-hB-WtZ">
+                                <rect key="frame" x="143" y="176" width="129" height="152"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="152" id="y8I-Hg-pOo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <state key="normal" title="🤖"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zca-hB-WtZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="132" id="0Zi-q6-B5s"/>
+                            <constraint firstItem="tow-KI-aOD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="61M-3M-qpl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tow-KI-aOD" secondAttribute="bottom" constant="214" id="98g-vD-pO0"/>
+                            <constraint firstItem="QE7-zG-6gu" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="458" id="FiK-wZ-QBT"/>
+                            <constraint firstItem="L0U-un-aFE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="72" id="Q47-Rv-Gsr"/>
+                            <constraint firstItem="zca-hB-WtZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UO2-Z1-gxG"/>
+                            <constraint firstItem="zca-hB-WtZ" firstAttribute="centerX" secondItem="L0U-un-aFE" secondAttribute="centerX" id="UWc-FO-HGT"/>
+                            <constraint firstItem="QE7-zG-6gu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XsO-7j-9Uy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tow-KI-aOD" secondAttribute="bottom" constant="100" id="dBc-nd-HMV"/>
+                            <constraint firstItem="L0U-un-aFE" firstAttribute="top" secondItem="zca-hB-WtZ" secondAttribute="bottom" constant="8" id="eCt-Mv-s2V"/>
+                            <constraint firstItem="QE7-zG-6gu" firstAttribute="top" secondItem="L0U-un-aFE" secondAttribute="bottom" constant="65" id="eQZ-LG-JcY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="paperButton" destination="jUl-qD-sn7" id="to7-Hz-5zX"/>
+                        <outlet property="resetButton" destination="tow-KI-aOD" id="NY2-el-luZ"/>
+                        <outlet property="robotButton" destination="zca-hB-WtZ" id="N9O-A3-eEt"/>
+                        <outlet property="rockButton" destination="AGU-YH-lIf" id="KFv-jJ-Pya"/>
+                        <outlet property="scissors" destination="tQX-gj-0Ay" id="BKu-hg-z2Y"/>
+                        <outlet property="statusButton" destination="L0U-un-aFE" id="kfj-IX-nwq"/>
+                        <outlet property="statusLabel" destination="L0U-un-aFE" id="7I6-qP-lr2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="57.589285714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
