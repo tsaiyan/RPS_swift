@@ -26,6 +26,10 @@ class ViewController: UIViewController {
 
 	// MARK: - viewDidLoad
 	
+	override func loadView() {
+		super.loadView()
+		
+	}
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		resetButton.isHidden = true

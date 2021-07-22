@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A76392F26A9819C00A29EA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A76392E26A9819C00A29EA1 /* LaunchScreen.storyboard */; };
 		9A84364D25EB0020009B735E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A84364C25EB0020009B735E /* AppDelegate.swift */; };
 		9A84364F25EB0020009B735E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A84364E25EB0020009B735E /* SceneDelegate.swift */; };
 		9A84365125EB0020009B735E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A84365025EB0020009B735E /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9A76392E26A9819C00A29EA1 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A84364925EB0020009B735E /* RPS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RPS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A84364C25EB0020009B735E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A84364E25EB0020009B735E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				9A84366525EB0169009B735E /* Sign.swift */,
 				9A84365025EB0020009B735E /* ViewController.swift */,
 				9A84365225EB0020009B735E /* Main.storyboard */,
+				9A76392E26A9819C00A29EA1 /* LaunchScreen.storyboard */,
 			);
 			path = RPS;
 			sourceTree = "<group>";
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A84365925EB0020009B735E /* LaunchScreen.storyboard in Resources */,
+				9A76392F26A9819C00A29EA1 /* LaunchScreen.storyboard in Resources */,
 				9A84365625EB0020009B735E /* Assets.xcassets in Resources */,
 				9A84365425EB0020009B735E /* Main.storyboard in Resources */,
 			);
